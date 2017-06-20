@@ -13,7 +13,7 @@ void drawpgm (std::string filename, int width, int height, int max_val, uint16_t
 
 int main (int argc, char * argv[])
 {
-	std::string filename = "sample_image.pgm";
+  std::string filename = "sample_image.pgm";
   uint16_t image[WIDTH][HEIGHT];
 
   // Sample 2D array 
@@ -25,9 +25,9 @@ int main (int argc, char * argv[])
     }
   }
 
-	drawpgm(filename, WIDTH, HEIGHT, MAX_VAL, image);
-	std::cout << "Done. PGM image is " << filename << std::endl;
-	return 0;
+  drawpgm(filename, WIDTH, HEIGHT, MAX_VAL, image);
+  std::cout << "Done. PGM image is " << filename << std::endl;
+  return 0;
 }
 
 void drawpgm (std::string filename, int width, int height, int max_val, uint16_t image[WIDTH][HEIGHT]) 
